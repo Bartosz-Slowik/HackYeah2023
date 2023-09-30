@@ -1,5 +1,6 @@
 .idea/
 .vscode/
+utils/db-data/
 
 *.iml
 *.ipr

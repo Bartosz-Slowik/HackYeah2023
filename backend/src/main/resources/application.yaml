@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+
+security:
+  basic:
+    enabled: false
+
+logging:
+  file: logback.xml
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydb
+    username: example
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    spring:
+      jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate

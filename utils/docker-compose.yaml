@@ -1,0 +1,21 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: example
+      POSTGRES_DB: mydb
+    ports:
+      - 5432:5432
+    volumes:
+        - db-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 9090:8080
+
+volumes:
+    db-data: {}
