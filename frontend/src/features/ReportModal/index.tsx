@@ -44,7 +44,7 @@ const ReportModal = ({ onClose }: Props) => {
         coordinates={coordinates}
         setCoordinates={setCoordinates}
       />
-      <div className="absolute flex flex-col p-4 gap-2 rounded-t-2xl bottom-0 w-full sm:w-[600px] sm:left-1/2 sm:-translate-x-1/2 z-10 bg-white text-gray-800">
+      <div className="fixed flex flex-col p-4 gap-2 rounded-t-2xl bottom-0 w-full sm:w-[600px] sm:left-1/2 sm:-translate-x-1/2 z-10 bg-white text-gray-800">
         <div className="h-0 w-full relative">
           <MdCancel
             className="absolute right-0 top-0 h-8 w-8 cursor-pointer text-gray-600"

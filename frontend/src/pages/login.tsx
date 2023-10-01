@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from "hooks/redux-hooks";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from "store/auth-actions";
+import addIcon from "assets/image 7.svg";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,6 +21,8 @@ const Login = () => {
   const formValid = validEmail && validPassword && !loading;
 
   const onSubmitHandler = () => {
+    navigate("/", { replace: true });
+    return;
     if (!formValid) return;
     dispatch(login(email, password));
   };
@@ -44,6 +47,14 @@ const Login = () => {
     <div className="w-full h-screen">
       <div className="p-4 flex justify-center xs:w-[500px]">
         <div className="flex flex-col gap-4">
+          <div className="w-full flex justify-center mt-16 mb-4 ">
+          <div className="relative flex flex-col">
+            <img
+              src={addIcon}
+              className="w-20 h-20 z-10"
+            />
+            <div className="absolute bottom-0 -z-10 w-20 h-4 bg-gray-300 rounded-[50%] translate-y-1/2 animate-pulse"></div>
+          </div></div>
           <h1 className="text-2xl font-bold leading-tight tracking-tight text-gray-800">
             Sign in to your account
           </h1>

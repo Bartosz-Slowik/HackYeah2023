@@ -4,6 +4,8 @@ import { Marker } from "react-map-gl";
 import Map, { ViewStateChangeEvent } from "react-map-gl/maplibre";
 import getIcon from "utils/animals";
 
+import {FaLocationArrow} from "react-icons/fa";
+
 const MainMap = () => {
   const reports = useAppSelector((state) => state.reports.reports);
 
@@ -34,7 +36,15 @@ const MainMap = () => {
           >
             <img src={getIcon(report.animal)} className="w-10 h-10" />
           </Marker>
+          
         ))}
+        <Marker
+          longitude={19.939162589968326}
+          latitude={ 50.06013942039507}
+          anchor="center"
+        >
+          <FaLocationArrow className="w-5 h-5 drop-shadow-xl text-blue-600 " />
+        </Marker>
       </Map>
     </div>
   );

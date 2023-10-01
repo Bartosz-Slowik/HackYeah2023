@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaLocationArrow } from "react-icons/fa";
 import Map, {
   MapLayerMouseEvent,
   Marker,
@@ -44,6 +45,13 @@ const SelectMap = ({ coordinates, setCoordinates, animal }: Props) => {
           <img src={getIcon(animal)} className="w-10 h-10" />
         </Marker>
       )}
+      <Marker
+          longitude={19.939162589968326}
+          latitude={ 50.06013942039507}
+          anchor="center"
+        >
+          <FaLocationArrow className="w-5 h-5 drop-shadow-xl text-blue-600 " />
+        </Marker>
     </Map>
   );
 };

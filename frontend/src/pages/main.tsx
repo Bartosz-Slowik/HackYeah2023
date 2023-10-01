@@ -40,7 +40,7 @@ const Main = () => {
         <>
           <MainMap />
           <button
-            className="z-10 absolute bottom-6 right-6 p-4 font-semibold drop-shadow-lg bg-white text-white rounded-full"
+            className="z-10 fixed bottom-6 right-6 p-4 font-semibold drop-shadow-lg bg-white text-white rounded-full"
             onClick={() => setNewReportModalOpen(true)}
           >
             <img src={addIcon} className="w-8 h-8 drop-shadow-2xl" />
@@ -50,6 +50,11 @@ const Main = () => {
       {newReportModalOpen && (
         <ReportModal onClose={() => setNewReportModalOpen(false)} />
       )}
+      <button
+            className="z-10 fixed top-6 right-6 w-14 h-14 font-semibold drop-shadow-lg bg-white text-white rounded-full overflow-hidden"
+          >
+            <img src="profile.png" className="w-full h-full drop-shadow-2xl object-cover" />
+          </button>
     </div>
   );
 };
