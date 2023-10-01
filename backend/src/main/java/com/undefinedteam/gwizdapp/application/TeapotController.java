@@ -3,6 +3,7 @@ package com.undefinedteam.gwizdapp.application;
 import com.undefinedteam.gwizdapp.contract.api.TeapotApi;
 import com.undefinedteam.gwizdapp.contract.model.teapot.TeapotResponseDto;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RestController;
 
 @RequiredArgsConstructor

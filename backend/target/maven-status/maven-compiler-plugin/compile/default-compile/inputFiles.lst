@@ -1,0 +1,8 @@
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/infrastructure/mappers/CentralMapperConfig.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/contract/model/ErrorResponseDto.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/contract/api/TeapotApi.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/GwizdApplication.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/contract/model/exceptions/BadRequestException.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/infrastructure/filters/OriginFilter.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/application/TeapotController.java
+/home/patyg/Projects/Events/HackYeah2023/HackYeah2023/backend/src/main/java/com/undefinedteam/gwizdapp/contract/model/teapot/TeapotResponseDto.java

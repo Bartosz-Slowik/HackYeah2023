@@ -1,0 +1,8 @@
+com/undefinedteam/gwizdapp/infrastructure/filters/OriginFilter.class
+com/undefinedteam/gwizdapp/infrastructure/mappers/CentralMapperConfig.class
+com/undefinedteam/gwizdapp/GwizdApplication.class
+com/undefinedteam/gwizdapp/contract/model/teapot/TeapotResponseDto.class
+com/undefinedteam/gwizdapp/contract/model/ErrorResponseDto.class
+com/undefinedteam/gwizdapp/contract/model/exceptions/BadRequestException.class
+com/undefinedteam/gwizdapp/contract/api/TeapotApi.class
+com/undefinedteam/gwizdapp/application/TeapotController.class
